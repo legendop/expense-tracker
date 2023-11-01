@@ -25,20 +25,16 @@ export async function Fetch(path, data) {
   export async function Get(query) {
     const endpoint = "http://localhost:8000";    
     const res = await fetch(endpoint + query);
-    //console.log("response show data " ,res);
     const body = await res.text();    
     const response = JSON.parse(body);
-    //console.log("Body response text",response);
     return response;
   }
 
   export async function Delete(query) {
     const endpoint = "http://localhost:8000";    
     const res = await fetch(endpoint + query);
-    //console.log("response show data " ,res);
     const body = await res.text();    
     const response = JSON.parse(body);
-    //console.log("Body response text",response);
     return response;
   }
   

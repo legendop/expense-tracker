@@ -43,8 +43,8 @@ const Signup = () => {
         .string()
         .required("required")
         .matches(
-          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
-          "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/,
+          "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number"
         ),
     }),
     //All the value of form come here after submitting
@@ -83,7 +83,7 @@ const Signup = () => {
           <form onSubmit={formik.handleSubmit}>
             {/* Input  Name */}
             <TextField
-              label="Name"
+              label="Enter Name"
               type="text"
               fullWidth
               name="name"
@@ -97,7 +97,7 @@ const Signup = () => {
             <br />
             {/* Input Email Address */}
             <TextField
-              label="Email"
+              label="Enter Email"
               type="text"
               fullWidth
               name="email"
@@ -111,7 +111,7 @@ const Signup = () => {
             <br />
             {/* Input Password */}
             <TextField
-              label="Password"
+              label="Enter Password"
               type="password"
               fullWidth
               name="password"

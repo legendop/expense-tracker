@@ -29,7 +29,7 @@ const ExpenseForm = () => {
     validationSchema: yup.object({
       title: yup.string().required("required"),
       category: yup.string().required("required"),
-      detail: yup.string().required("required"),
+      detail: yup.string(),
       amount: yup.string().required("required"),
     }),
     //All the value of form come here after submitting

@@ -41,15 +41,15 @@ const Graph = () => {
       <Grid container justify="space-between" alignItems="center">
         <Grid item>
           <Typography>
-            <Crop169Icon style={{ marginRight: "8px", color: "#3be84a", backgroundColor:'#3be84a' }} />
+            <Crop169Icon style={{ marginRight: "8px", color: "#44ff55", backgroundColor:'#44ff55' }} />
             Saving Amount {getPositiveNumber((savingAmount*100/totalAmount).toFixed(0)) }%
           </Typography>
           <Typography>
-            <Crop169Icon style={{ marginRight: "8px" ,color: "#e6f540", backgroundColor:'#e6f540' }} />
+            <Crop169Icon style={{ marginRight: "8px" ,color: "#ff5544", backgroundColor:'#ff5544' }} />
             Invest Amount {getPositiveNumber((investAmount*100/totalAmount).toFixed(0)) }% 
           </Typography>
           <Typography>
-            <Crop169Icon style={{ marginRight: "8px", color: "#f54045" , backgroundColor:'#f54045'}} />
+            <Crop169Icon style={{ marginRight: "8px", color: "#5544ff" , backgroundColor:'#5544ff'}} />
             Expense Amount  {getPositiveNumber((expenseAmount*100/totalAmount).toFixed(0)) }%
           </Typography>
         </Grid>

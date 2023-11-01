@@ -78,7 +78,7 @@ const Signin = () => {
         <form onSubmit={formik.handleSubmit}>
           {/* Email */}
           <TextField
-            label="Email"
+            label="Enter Email"
             name="email"
             placeholder="Enter email"
             fullWidth
@@ -92,7 +92,7 @@ const Signin = () => {
           <br />
           {/* Password */}
           <TextField
-            label="Password"
+            label="Enter Password"
             name="password"
             placeholder="Enter password"
             type="password"

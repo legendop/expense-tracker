@@ -19,7 +19,7 @@ export const ShowExpenses = () => {
     <>
       {/* Tittle */}
       <Typography
-        variant="h5"
+        variant="h4"
         style={{ marginBottom: "1rem", fontWeight: "bold" }}
       >
         Expense History
@@ -27,13 +27,13 @@ export const ShowExpenses = () => {
       <Table
         sx={{
           maxWidth: "800px",
-          boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.3)",
+          boxShadow: "0px 0px 20px rgba(0, 0, 5, 0.3)",
           borderRadius: "10px",
           overflow: "hidden",
         }}
       >
         {/* Table  */}
-        <TableHead sx={{ backgroundColor: "#f2f2f2" }}>
+        <TableHead sx={{ backgroundColor: "#eef2ee" }}>
           <TableRow>
             {/* Table Heading */}
             <TableCell style={{ fontWeight: "bold" }}>Title</TableCell>

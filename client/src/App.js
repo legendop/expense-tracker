@@ -7,7 +7,6 @@ import Signup from "./components/Signup";
 import Signin from "./components/Signin";
 import ExpenseProvider from "./context/ExpenseContext";
 import { Grid } from "@mui/material";
-import CopyrightIcon from "@mui/icons-material/Copyright";
 
 function App() {
   return (
@@ -35,7 +34,6 @@ function App() {
           fontWeight: "bold",
         }}
       >
-        Karan Khatik <CopyrightIcon /> @2023
       </Grid>
       </ExpenseProvider>
       
